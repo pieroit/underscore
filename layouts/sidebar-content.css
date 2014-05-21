@@ -1,0 +1,55 @@
+/*
+Theme Name: underscore
+Layout: Sidebar-Content
+*/
+
+.site {
+	padding: 3%;
+	background-color: #fafafa;
+}
+
+.content-area {
+	float: right;
+	width: 62%;
+}
+
+.site-main {
+	padding-top:1%;
+}
+.site-content .widget-area {
+	float: left;
+	overflow: hidden;
+	width: 38%;
+}
+
+.widget-area {
+	padding-right:5%;
+	padding-left:1%;
+	padding-top:1%;
+}
+s
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+
+
+/* ORIGINAL
+.content-area {
+	float: right;
+	margin: 0 0 0 -25%;
+	width: 100%;
+}
+.site-main {
+	margin: 0 0 0 25%;
+}
+.site-content .widget-area {
+	float: left;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+} */
