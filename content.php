@@ -7,16 +7,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
-
-		<?php if ( 'post' == get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php underscore_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-summary">
+		<a href=<?php  the_permalink(); ?>>
+			<?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail'); ?>
+		</a>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 	<?php else : ?>
@@ -25,6 +22,9 @@
 			<?php echo get_the_post_thumbnail( get_the_ID(), array(1000, 250)); ?>
 		</a>
 		<?php the_excerpt(); ?>
+		<!--<a href=<?php  the_permalink(); ?>>
+			Read more...
+		</a>-->
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'underscore' ),
@@ -37,13 +37,16 @@
 
 	<footer class="entry-footer">
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
+
+			<?php underscore_posted_on(); ?>
+			
 			<?php
 				/* translators: used between list items, there is a space after the comma */
 				$categories_list = get_the_category_list( __( ', ', 'underscore' ) );
 				if ( $categories_list && underscore_categorized_blog() ) :
 			?>
 			<span class="cat-links">
-				<?php printf( __( 'Posted in %1$s', 'underscore' ), $categories_list ); ?>
+				<?php printf( __( ' in %1$s', 'underscore' ), $categories_list ); ?>
 			</span>
 			<?php endif; // End if categories ?>
 
