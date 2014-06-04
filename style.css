@@ -140,8 +140,8 @@ select,
 textarea {
 	color: #333;
 	font-family: 'Lato', sans-serif;
-	font-size: 16px;
-	font-size: 1.6rem;
+	font-size: 15px;
+	font-size: 1.5rem;
 	line-height: 1.5;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -454,7 +454,7 @@ a:active {
 
 /*piero*/
 .site-title a {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	text-decoration: none;
 }
 .site-description {
@@ -463,9 +463,10 @@ a:active {
 .site-branding {
 	width: 30%;
 	float: left;
+	margin-left: 5%;
 }
 .nav-menu > li {
-	margin-right: 20px;
+	margin-right: 5%;
 }
 .site-info {
 	font-size: 0.62em;
@@ -605,8 +606,8 @@ a:active {
 article, aside {
 	margin-bottom: 2em;
 	background-color: #fff;
-	box-shadow: 0px 0px 10px #aaa;
-	border-radius:3px;
+	box-shadow: 2px 3px 3px #aaa;
+	border-radius:2px;
 	padding: 10px;
 }
 .entry-title {

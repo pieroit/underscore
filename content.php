@@ -19,7 +19,7 @@
 	<?php else : ?>
 	<div class="entry-content">
 		<a href=<?php  the_permalink(); ?>>
-			<?php echo get_the_post_thumbnail( get_the_ID(), array(1000, 250)); ?>
+			<?php echo get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
 		</a>
 		<?php the_excerpt(); ?>
 		<!--<a href=<?php  the_permalink(); ?>>
