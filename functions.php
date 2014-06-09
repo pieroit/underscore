@@ -97,6 +97,12 @@ function underscore_scripts() {
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+	
+	// three.js show-off by Piero
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js');
+	wp_enqueue_script( 'threejs-detector', get_template_directory_uri() . '/js/threejs/Detector.js');
+	wp_enqueue_script( 'threejs', get_template_directory_uri() . '/js/threejs/three.min.js');
+	wp_enqueue_script( 'threejs-main', get_template_directory_uri() . '/js/threejs/three.main.js');
 }
 add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 
