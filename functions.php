@@ -98,11 +98,23 @@ function underscore_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 	
-	// three.js show-off by Piero
+	// There was no jquery :|
 	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js');
-	wp_enqueue_script( 'threejs-detector', get_template_directory_uri() . '/js/threejs/Detector.js');
-	wp_enqueue_script( 'threejs', get_template_directory_uri() . '/js/threejs/three.min.js');
-	wp_enqueue_script( 'threejs-main', get_template_directory_uri() . '/js/threejs/three.main.js');
+	
+	// three.js show-off by Piero (only on desktop)
+	if( ! wp_is_mobile() ) {	
+		wp_enqueue_script( 'threejs-detector', get_template_directory_uri() . '/js/threejs/Detector.js');
+		wp_enqueue_script( 'threejs', get_template_directory_uri() . '/js/threejs/three.min.js');
+		wp_enqueue_script( 'threejs-main', get_template_directory_uri() . '/js/threejs/three.main.js');	
+		
+		wp_enqueue_script( 'underscoreDesktopPiero', get_template_directory_uri() . '/js/underscoreDesktopPiero.js');
+	}
+
+	if( wp_is_mobile() ) {
+		// responsivity script !!!!
+		wp_enqueue_script( 'underscoreMobilePiero', get_template_directory_uri() . '/js/underscoreMobilePiero.js');
+		
+	}
 }
 add_action( 'wp_enqueue_scripts', 'underscore_scripts' );
 

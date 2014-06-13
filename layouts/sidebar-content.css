@@ -10,24 +10,19 @@ Layout: Sidebar-Content
 
 .content-area {
 	float: right;
-	width: 70%;
+	width: 80%;
 }
 
 .site-main {
 	padding-top:1%;
 }
-.site-content .widget-area {
-	float: left;
-	overflow: hidden;
-	width: 30%;
-}
 
 .widget-area {
-	padding-right:5%;
-	padding-left:1%;
-	padding-top:1%;
+	float: left;
+	overflow: hidden;
+	width: 20%;
 }
-s
+
 .site-footer {
 	clear: both;
 	width: 100%;
