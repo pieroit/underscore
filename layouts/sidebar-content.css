@@ -5,12 +5,11 @@ Layout: Sidebar-Content
 
 .site {
 	padding: 3%;
-	background: linear-gradient(160deg, #fff, #ccc);
 }
 
 .content-area {
 	float: right;
-	width: 80%;
+	width: 70%;
 }
 
 .site-main {
@@ -20,7 +19,7 @@ Layout: Sidebar-Content
 .widget-area {
 	float: left;
 	overflow: hidden;
-	width: 20%;
+	width: 30%;
 }
 
 .site-footer {

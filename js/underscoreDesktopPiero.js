@@ -12,7 +12,7 @@ $(document).ready( function(){
 		$('.hentry').addClass('thumb-hentry');
 		
 		// Handle thumb animation
-		var images = '.attachment-medium.wp-post-image';
+		var images = '.attachment-large.wp-post-image';
 		
 		$(images).addClass('thumb-hentry-image');
 		

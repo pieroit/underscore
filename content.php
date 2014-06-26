@@ -18,12 +18,12 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' ); ?>
+		<a href=<?php  the_permalink(); ?>>
+			<?php echo get_the_post_thumbnail( get_the_ID(), 'thumbnail' ); ?>
+		</a>
 		<?php the_excerpt(); ?>
 		<?php if( ! wp_is_mobile() ) : ?>
-			<a href=<?php  the_permalink(); ?>>
-				<?php echo get_the_post_thumbnail( get_the_ID(), 'medium' ); ?>
-			</a>
+			<?php echo get_the_post_thumbnail( get_the_ID(), 'large' ); ?>
 		<?php endif; ?>
 		<!--<a href=<?php  the_permalink(); ?>>
 			Read more...

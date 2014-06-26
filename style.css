@@ -575,9 +575,9 @@ a {
 --------------------------------------------------------------*/
 .sticky {
 }
-/*.hentry {
-	margin: 0 0 1.5em;
-}*/
+.hentry {
+	padding:20px;
+}
 .byline,
 .updated {
 	display: none;
@@ -587,7 +587,9 @@ a {
 	display: inline;
 }
 .page-content,
-.entry-content,
+.entry-content {
+	position: relative;
+},
 .entry-summary {
 }
 .page-links {
@@ -606,8 +608,12 @@ article, aside {
 
 .thumb-hentry {
 	width:50%;
-	height:300px;
+	height:250px;
 	float:left;
+}
+.thumb-hentry > .entry-content {
+	height:250px;
+	overflow: hidden;
 }
 
 .thumb-hentry-image {
