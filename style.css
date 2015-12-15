@@ -589,6 +589,8 @@ a {
 .page-content,
 .entry-content {
 	position: relative;
+    max-width: 650px;
+    font-size: 17px;
 },
 .entry-summary {
 }
@@ -626,6 +628,9 @@ article, aside {
 
 .entry-title {
 	font-size:1.2em;
+}
+.single .entry-title {
+	font-size:2em;
 }
 .entry-meta, .entry-footer {
 	font-size:0.62em;
