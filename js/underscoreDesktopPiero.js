@@ -1,9 +1,6 @@
 $ = jQuery;
 $(document).ready( function(){
 	
-	var golden = 0.61;
-	var animationTime = 0;
-	
 	// If there are many articles on the page, make them images
 	if( $('.hentry').size() > 1 ){
 		
