@@ -629,8 +629,11 @@ article, aside {
 .entry-title {
 	font-size:1.2em;
 }
-.single .entry-title {
+.single .entry-title, .page .entry-title {
 	font-size:2em;
+}
+.single .entry-content, .page .entry-content {
+	margin-top: 20px;
 }
 .entry-meta, .entry-footer {
 	font-size:0.62em;
