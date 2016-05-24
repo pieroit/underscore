@@ -10,15 +10,5 @@ $(document).ready( function(){
 		// Change <article> css by adding a class
 		// the class makes them shrink and in a grid
 		$('.hentry').addClass('thumb-hentry');
-		
-		// Handle thumb animation
-		var images = '.attachment-medium.wp-post-image';
-		
-		$(images).addClass('thumb-hentry-image');
-		
-		$( images ).mouseenter(function(){
-			$(this).hide(animationTime);
-			$( images ).not(this).show(animationTime);
-		});
 	}
 });
